@@ -53,7 +53,7 @@ datetime_str=value, format=self.format, ex=ex,), param, ctx)
 @click.option('--shortest', is_flag=True, default=False, help='Find shortest flight.')
 @click.option('--one-way', 'oneway', is_flag=True, help='Book one-way flight. [default]')
 @click.option('--return', 'jreturn', type=int, help='Book return flight. Specify the length of your stay in destination (count nights).')
-@click.option('-v', '--verbose', is_flag=True, default=False, help='Verbosity')
+@click.option('-v', '--verbose', is_flag=True, default=False, help='Print details.')
 def book_flight(dateFrom, flyFrom, to, cheapest, shortest, oneway, jreturn, verbose):
     # prepare parameters of the flight
     params = dict(dateFrom=datetime.strftime(dateFrom, '%d/%m/%Y'),
