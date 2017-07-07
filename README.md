@@ -12,6 +12,6 @@ Options:
   --one-way         Book one-way flight. [default]
   --return INTEGER  Book return flight. Specify the length of your stay in
                     destination (count nights).
-  -v, --verbose     Verbosity
+  -v, --verbose     Print details.
   --help            Show this message and exit.
   ```
